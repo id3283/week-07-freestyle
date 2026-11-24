@@ -1,6 +1,7 @@
 package valuableassets;
 
 public class Main {
+    // Project/repo name: valuable-assets
 
     public static void main(String[] args) {
 
@@ -14,6 +15,7 @@ public class Main {
         myPortfolio.addValuable(new Car("Ferrari", 120_000, 6_000));
 
 
+        // Should print: I'm worth: 180800.0
         System.out.println("I'm worth: " + myPortfolio.getValue());
     }
 }
