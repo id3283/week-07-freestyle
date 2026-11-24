@@ -1,3 +1,5 @@
+package banking;
+
 public interface BankAccount {
 
     void deposit(double amount);

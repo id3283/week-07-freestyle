@@ -1,14 +1,19 @@
-public class CheckingAccount implements Asset, BankAccount {
-    private double balance = 0;
+package banking;
 
-    public CheckingAccount(double balance) {
+public class SavingsAccount implements BankAccount, Asset{
+    private double balance;
+    private static double interestRate = 0.033;
+
+    public SavingsAccount(double balance) {
         this.balance = balance;
     }
 
+    @Override
     public void deposit(double amount) {
         this.balance += amount;
     }
 
+    @Override
     public double withdraw(double amount) {
         if (this.balance > amount) {
             this.balance -= amount;
@@ -21,12 +26,8 @@ public class CheckingAccount implements Asset, BankAccount {
         }
     }
 
-    public double getBalance() {
-        return balance;
-    }
-
     @Override
     public double getValue() {
-        return this.balance;
+        return 0;
     }
 }
