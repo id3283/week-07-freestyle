@@ -1,6 +1,6 @@
 package valuableassets;
 
-public abstract class Vehicle implements Valuable{
+public  abstract  class Vehicle implements Valuable{
     private String makeModel;
     private double initialCost;
     private int initialMileage;
